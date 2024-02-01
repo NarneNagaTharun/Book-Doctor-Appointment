@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  width: 1000px;
+  margin: 80px auto;
+}
+
+.appointment-heading,
+.gen-phy-heading,
+.ent-spec-heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.select-doctor-type {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.gen-phy-but:link,
+.gen-phy-but:visited {
+  background-color: #2b9545;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.gen-phy-but:hover,
+.gen-phy-but:active {
+  background-color: #187106;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.ent-spe-btn {
+  margin-right: 0px !important;
+}
+
+/*------------------ General Physician Page, ENT Specialist --------------------*/
+.gen-phy-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.gen-phy {
+  display: flex;
+  gap: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.doc-details {
+  margin: 10px;
+}
+
+/*----------------------- Appointment Form ---------------------------*/
+/* .appointment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.data-point {
+  display: flex;
+  align-items: flex-start;
+} */
+
+.appointment-form {
+  font-size: 22px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+label {
+  justify-self: center;
+}
+
+input {
+  justify-self: stretch;
+}
+
+.date-picker {
+  justify-self: start;
+}
+
+.submit-btn {
+  font-size: 18px;
+  grid-column: 2 / -1;
+  justify-self: start;
+  background-color: #2b9545;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  border: none;
+}
+.submit-btn:hover,
+.submit-btn:active {
+  font-size: 18px;
+  grid-column: 2 / -1;
+  justify-self: start;
+  background-color: #187106;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #2b9545;
+}
